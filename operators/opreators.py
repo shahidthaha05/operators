@@ -160,9 +160,181 @@
 
 
 
-a=int(input(" enter the number :"))
-d=a%10
-if d%3==0:
-    print('number is divisible')
-else:
-    print('not divisible' )
+# a=int(input(" enter the number :"))
+# d=a%10
+# if d%3==0:
+#     print('number is divisible')
+# else:
+#     print('not divisible' )
+
+
+
+# a=30
+# b=30
+# if a==b:3
+#     print('equal')
+# elif a>b:
+#     print(a)
+# else:
+#     print(b)
+
+
+# a=int(input("enter a number :"))
+# if a==1:
+#     print('sunday')
+# elif a==2:
+#     print('monday')
+# elif a==3:
+#     print('tuesday')
+# elif a==4:
+#     print('wednesday')
+# elif a==5:
+#     print('thursday')
+# elif a==6:
+#     print('friday')
+# elif a==7:
+#     print('saturday')
+# else:
+#     print('invalid')
+
+
+# a=input("enter the city : ")
+
+# if a=='delhi':
+#     print('red fort')
+# elif a=='agra':
+#     print('taj mahal')
+# elif a=='jaipur':
+#     print('jal mahal')
+# else:
+#     print('not found')
+
+
+# a=int(input("enter the bike price : "))
+
+# if a>100000:
+#     print(a*0.15)
+# elif a>50000 and a<=100000:
+#     print(a*0.10)
+# else:
+#     print(a*0.05)
+
+
+
+# a=int(input("enter the unit : "))
+
+# if a<=100:
+#     print('no charge')
+# elif a>100 and a<=200:
+#     print((a-100)*5)
+# elif a>=200:
+#     print((a-200)*10+500)
+# else:
+#     print('invalid')
+
+
+# while condition:
+#     statment
+#     increment/decrement
+
+
+# i=1
+# while i<=10:
+#     print(i)
+#     i+=1
+
+
+# a=int(input("enter the fisrt number :" ))
+# b=int(input("enter the second number :"))
+# c=0
+# while a<=b:
+#     c+=a 
+#     a+=1
+# print(c)
+
+
+
+# a=int(input("enter the first number :"))
+# b=int(input("enter the last number :"))
+# c=0
+# while a<=b:
+#     if a%2!=0:
+#         c+=a
+#     a+=1
+# print(c)
+
+
+# c=0
+# while a<=b:
+#     if a%2!=0:
+#         c+=a
+#     a+=1
+# print(c)
+
+
+
+
+# i=1
+# a=int(input("enter the number :" ))
+# while i<=10:
+#     print(i,'*',a,'=',a*i)
+#     i+=1
+
+# i=1
+# a=int(input("enter a number :"))
+# s=1
+# while i<=a:
+#       s*=i
+#       i+=1
+# print(s)
+
+
+
+
+
+# a=int(input("enter the number : "))
+# rev=0
+# while a>0:
+#     d=a%10
+#     rev=rev*10+d
+#     a//=10
+# print(rev)
+
+
+''''
+a=123
+rev=0
+d=3
+rev=rev*10+d
+rev= 0*10+3
+rev=3
+a=12
+------------
+a=12
+rev=3
+d=2
+rev=rev*10+d
+rev= 3*10+2
+rev=32
+a=1
+-------------
+a=1
+rev=32
+d=1
+rev=rev*10+d
+rev= 32*10+1
+rev=321
+a=0
+'''
+
+
+
+a=int(input("enter the word :"))
+rev=0
+while a>0:
+    d=a%10
+    rev=rev*10+d
+    a//=10
+print(rev)
+
+
