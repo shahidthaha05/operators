@@ -280,6 +280,8 @@
 #     print(i,'*',a,'=',a*i)
 #     i+=1
 
+
+
 # i=1
 # a=int(input("enter a number :"))
 # s=1
@@ -329,12 +331,182 @@ a=0
 
 
 
-a=int(input("enter the word :"))
-rev=0
-while a>0:
-    d=a%10
-    rev=rev*10+d
-    a//=10
-print(rev)
+# a=int(input("enter the number :"))
+# rev=0
+# while a>0:
+#     d=a%10
+#     rev=rev*10+d
+#     a//=10
+# print(rev)
 
 
+# a=input("enter the word : ")
+# rev=""
+# i=0
+# l=len(a)
+# while i<l:
+#     # print(a[i])
+#     rev=(a[i])+rev
+#     i+=1
+# print(rev)
+
+
+
+# forloop
+# for iteration_var in iterables:
+#     stm 
+
+
+
+# range()
+# list
+# tuple
+# set
+# dict
+# str
+
+# (range(limit))
+# for i in range(10):
+#     print(i)
+
+# # range(start,end)
+# for i in range(2,11):
+#     print(i)
+
+
+# range(start,end,updation)
+# for i in range(2,11,2):
+#     print(i)
+
+
+# a="python"
+# for i in a:
+#     print(i)
+
+
+
+
+# sum of 2 numbers
+
+# a=int(input("enter first number : "))
+# b=int(input("enter second numbre : "))
+# s=0
+# for i in range(a,b+1):
+#     s+=i
+# print(s)
+
+
+
+# odd number 
+
+# a=int(input("enter first number: "))
+# b=int(input("enter second number: "))
+# for i in range(a,b+1):
+#     if i%2!=0:
+#         print(i)
+
+
+
+
+# sum of odd numbers
+
+# a=int(input("enter first number : "))
+# b=int(input("enter another number : "))
+# s=0
+# for i in range(a,b+1):
+#     if i%2!=0:
+#         s+=i
+# print(s)
+
+
+# multiplication of numbers
+
+# a=int(input("enter a number : "))
+# for i in range(1,11):
+#     print(i,'*',a,'=',a*i)
+
+
+
+
+
+# factorial of number
+
+# a=int(input("enter a number : "))
+# s=1
+# for i in range(1,a+1):
+#     s*=i
+# print(s)
+
+
+
+# reverse of a string
+
+# a=input("enter the word : ")
+# rev=""
+# for i in a:
+#     rev=i+rev
+# print(rev)
+
+
+
+
+
+# loop control statments
+
+
+# break
+
+# for i in range(10):
+#     print(i)
+#     if i==5:
+#       break
+
+
+
+# continue
+
+# for i in range(10):
+#     if i==5:
+#      print(" is the value")
+#      continue
+#     print(i)        
+
+
+# pass
+
+# for i in range(10):
+#     pass
+
+
+
+# reverse of a number
+
+# a=int(input("enter a number : "))
+# rev=0
+# for i in range(a):
+#     d=a%10
+#     rev=rev*10+d
+#     a//=10
+#     if a==0:
+#         break
+# print(rev)
+
+# a=input("enter a word : ")
+# l=len(a)
+# for i in a:
+#     if a[i]%2==0:
+#         print()
+
+
+
+
+
+
+
+
+a=input("enter the word : ")
+i=0
+l=len(a)
+for i in (a):
+    if i%2==0:
+      print(i)
