@@ -504,9 +504,112 @@ a=0
 
 
 
-a=input("enter the word : ")
-i=0
-l=len(a)
-for i in (a):
-    if i%2==0:
-      print(i)
+# a=input("enter the word : ")
+# i=0
+# l=len(a)
+# for i in (a):
+#     if i%2==0:
+#       print(i)
+
+
+
+
+# list
+
+# l=[1,2,10,30,2,'abcd']
+# print(l[0])
+# print(l[1])
+
+# if 10 in l:
+#     print('available')
+# else:
+#     print('not available')
+
+
+
+# if 20 in l:
+#     print('available')
+# else:
+#     print('not available')
+
+
+# for i in l:
+#     print(i)
+
+
+
+
+# updation of the list
+
+# l[0]=22
+# print(l)
+
+
+
+
+# # append
+# l=[]
+# l.append(10)
+# print(l)
+
+# l.append('shahid')
+# print(l)
+
+# l.append([10,20,'abc'])
+# print(l)
+
+# l.append(10,)
+# print(l)
+
+
+# # extend
+
+# l.extend([100,200,300])
+# print(l)
+
+# # insert
+
+# l.insert(2,'don')
+# print(l)
+
+
+# delete
+
+# clear
+
+# l=[10,20,30]
+# l.clear()
+# print(l)
+
+
+# pop()
+
+# l.pop()
+# # print(l)
+
+# pop Index
+
+# l.pop(1)
+# print(l)
+
+
+# remove
+
+# l.remove(30)
+# print(l)
+
+
+
+
+
+# l=[10,20,30,8,5,6,]
+# # # print(l.index(6))
+# # # print(l.count(20))
+# # print(l)
+
+# l.sort()
+# # print(l)
+
+
+# l.reverse()
+# print(l)
