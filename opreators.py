@@ -613,3 +613,70 @@ a=0
 
 # l.reverse()
 # print(l)
+
+
+
+# sum of the listed items (int and float)
+
+# l=[1,10,12,'abc',8.5]
+# s=0
+# for i in l:
+#     if type(i)==int or type(i)==float:
+#         s+=i
+# print(s)
+
+
+
+
+# sum of odd and even numbers of a list
+
+# l=[10,1,2,3,5,8,6]
+# even=0
+# odd=0
+# for i in l:
+#      if i%2==0:
+#           even+=i
+#      else:
+#           odd+=i  
+# print(even)
+# print(odd)
+
+
+
+
+
+# remove the duplicates the value
+
+# using set
+
+# l=[10,1,2,3,5,8,6,1,3,5]
+# s=set(l)
+# l=list(s)                           
+# print(l)
+
+
+# using in /not in
+
+# l=[10,1,2,3,5,8,6,1,3,5]
+# l1=[]
+# for i in l:
+#     if i not in l1:
+#         l1.append(i)
+# print(l1)
+
+
+# using count and remove
+
+# l=[10,1,2,3,5,8,6,1,3,5]
+# for i in l:
+#     if l.count(i)>=2:
+#         l.remove(i)
+# print(l)
+
+
+l=[10,1,2,3,5,8,6,1,3,5]
+largest=[]
+for i in l:
+     if i>largest:
+          print(l)
+          
