@@ -325,7 +325,7 @@ rev=32
 d=1
 rev=rev*10+d
 rev= 32*10+1
-rev=321
+rev=321d
 a=0
 '''
 
@@ -694,37 +694,6 @@ a=0
 
 
 
-# list of numbers divisible by 3
-
-# l=[1,2,5,8,9,3,12]
-# for i in l:
-#     if i%3==0:
-#         print(i,'divisible')
-#     else:
-#         print(i,'not divisible')# for i in l:
-#     rev=i[::-1]
-#     if rev==i:
-#         print(rev,'its palindrome')
-#     else:
-#         print(rev,'its not palindrome')
-
-
-
-# list of numbers divisible by 3
-
-# l=[1,2,5,8,9,3,12]
-# for i in l:
-#     if i%3==0:
-#         print(i,'divisible')
-#     else:
-#         print(i,'not divisible')# for i in l:
-#     rev=i[::-1]
-#     if rev==i:
-#         print(rev,'its palindrome')
-#     else:
-#         print(rev,'its not palindrome')
-
-
 
 # list of numbers divisible by 3
 
@@ -776,38 +745,123 @@ a=0
 
 
 
-std=[['sha',20,100,],['mj',20,90]]
-while True:
- print('''
-1.student details
-2.view std details
-3.upadte std details
-4.delete std details
-5.exit
-          ''')
+# student details and choices
+
+# std=[['sha',20,100,],['mj',20,90]]
+# while True:
+#  print('''
+# 1.student details
+# 2.view std details
+# 3.upadte std details
+# 4.delete std details
+# 5.exit
+#           ''')
  
- choice=int(input("enter your choice :"))
- if choice==1:
-         name=str(input("enter name :"))
-         age=int(input("enter age :"))
-         mark=int(input("enter mark :"))
-         std.append([name,age,mark])
- elif choice==2:
-      for i in std:
-           print(i)
- elif choice==3:
-      name=str(input("enter name :"))
-      f=0
-      for i in std:
-           if name in i:
-             mark=int(input("enter mark :"))
-             i[2]=mark
-             f==1
-           if f==0:
-               print('invalid name')
- elif choice==5:
-     break
- else:
-     print('invalid choice')
+#  choice=int(input("enter your choice :"))
+#  if choice==1:
+#          name=str(input("enter name :"))
+#          age=int(input("enter age :"))
+#          mark=int(input("enter mark :"))
+#          std.append([name,age,mark])
+#  elif choice==2:
+#       for i in std:
+#            print(i)
+#  elif choice==3:
+#       name=str(input("enter name :"))
+#       f=0
+#       for i in std:
+#            if name in i:
+#              mark=int(input("enter mark :"))
+#              i[2]=mark
+#              f=1
+#       if f==0:
+#                print('invalid name')
+#  elif choice==4:
+#       name=str(input("enter name :"))
+#       f=0
+#       for i in std:
+#            if name in i:
+#                 std.remove(i)
+#                 f=1
+#       if f==0:
+#            print('invalid name')
+#  elif choice==5:
+#      break
+#  else:
+#      print('invalid choice')
 
       
+
+# employ details
+
+employ=[['shahid',100,25,'mumbai',100000000,'ceo',10]]
+while True:
+    print('''
+1.register
+2.view
+3.update
+4.delete
+5.add work
+6.search
+7.exit
+          ''')
+    
+    choice=int(input("enter your choice :"))
+    if choice==1:
+         name=str(input("enter name :"))
+         id=int(input("enter id :"))
+         age=int(input("enter age :"))
+         place=str(input("enter place :"))
+         salary=int(input("enter salary :"))
+         position=str(input("enter position :"))
+         experiance=int(input("enter experiance :"))
+         employ.append([name,id,age,place,salary,position,experiance])
+    elif choice==2:
+         for i in employ:
+              print(i)
+    elif choice==3:
+         name=str(input("enter name :"))
+         f=0
+         for i in employ:
+              if name in i:
+                   choice=int(input("enter your choice :"))
+                   if choice==1:
+                        age=int(input("enter age :"))
+                        i[2]=age
+                   elif choice==2:
+                        place=str(input("enter place :"))
+                        i[3]=place
+                   elif choice==3:
+                        salary=int(input("enter salary :"))
+                        i[4]=salary
+                   elif choice==4:
+                        position=str(input("enter position :"))
+                        i[5]=position
+                   elif choice==5:
+                        experiance=int(input("enter experiance :"))
+                        i[6]=experiance
+                        f=1
+         if f==0:
+              print('invalid name') 
+    elif choice==4:
+         name=str(input("enter name :"))
+         f=0
+         for i in employ:
+              if name in i:
+                   employ.remove(i)
+                   f=1
+         if f==0:
+              print('invalid name')
+    elif choice==6:
+         name=str(input("enter name :"))
+         f=0
+         for i in employ:
+              if name in i:
+                   print(i)
+                   f=1
+         if f==0:
+              print('invalid name')         
+    elif choice==7:
+         break
+    else :
+         print('invalid choice')
