@@ -795,6 +795,7 @@ a=0
 # employ details
 
 employ=[['shahid',100,25,'mumbai',100000000,'ceo',10]]
+import datetime
 while True:
     print('''
 1.register
@@ -840,7 +841,7 @@ while True:
                    elif choice==5:
                         experiance=int(input("enter experiance :"))
                         i[6]=experiance
-                        f=1
+                   f=1           
          if f==0:
               print('invalid name') 
     elif choice==4:
@@ -852,6 +853,14 @@ while True:
                    f=1
          if f==0:
               print('invalid name')
+    elif choice==5:
+          id=int(input("enter id :"))
+          for i in employ:
+               if id in i:
+                    task=input("enter task :")
+                    date=datetime.datetime.now().strftime('%x')
+                    i.append([task,date])
+                    print(i)
     elif choice==6:
          name=str(input("enter name :"))
          f=0
