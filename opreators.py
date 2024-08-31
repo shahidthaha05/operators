@@ -794,83 +794,142 @@ a=0
 
 # employ details
 
-employ=[['shahid',100,25,'mumbai',100000000,'ceo',10]]
-import datetime
-while True:
-    print('''
-1.register
-2.view
-3.update
-4.delete
-5.add work
-6.search
-7.exit
-          ''')
+# employ=[['shahid',100,25,'mumbai',100000000,'ceo',10]]
+# import datetime
+# while True:
+#     print('''
+# 1.register
+# 2.view
+# 3.update
+# 4.delete
+# 5.add work
+# 6.search
+# 7.exit
+#           ''')
     
-    choice=int(input("enter your choice :"))
-    if choice==1:
-         name=str(input("enter name :"))
-         id=int(input("enter id :"))
-         age=int(input("enter age :"))
-         place=str(input("enter place :"))
-         salary=int(input("enter salary :"))
-         position=str(input("enter position :"))
-         experiance=int(input("enter experiance :"))
-         employ.append([name,id,age,place,salary,position,experiance])
-    elif choice==2:
-         for i in employ:
-              print(i)
-    elif choice==3:
-         name=str(input("enter name :"))
-         f=0
-         for i in employ:
-              if name in i:
-                   choice=int(input("enter your choice :"))
-                   if choice==1:
-                        age=int(input("enter age :"))
-                        i[2]=age
-                   elif choice==2:
-                        place=str(input("enter place :"))
-                        i[3]=place
-                   elif choice==3:
-                        salary=int(input("enter salary :"))
-                        i[4]=salary
-                   elif choice==4:
-                        position=str(input("enter position :"))
-                        i[5]=position
-                   elif choice==5:
-                        experiance=int(input("enter experiance :"))
-                        i[6]=experiance
-                   f=1           
-         if f==0:
-              print('invalid name') 
-    elif choice==4:
-         name=str(input("enter name :"))
-         f=0
-         for i in employ:
-              if name in i:
-                   employ.remove(i)
-                   f=1
-         if f==0:
-              print('invalid name')
-    elif choice==5:
-          id=int(input("enter id :"))
-          for i in employ:
-               if id in i:
-                    task=input("enter task :")
-                    date=datetime.datetime.now().strftime('%x')
-                    i.append([task,date])
-                    print(i)
-    elif choice==6:
-         name=str(input("enter name :"))
-         f=0
-         for i in employ:
-              if name in i:
-                   print(i)
-                   f=1
-         if f==0:
-              print('invalid name')         
-    elif choice==7:
-         break
-    else :
-         print('invalid choice')
+#     choice=int(input("enter your choice :"))
+#     if choice==1:
+#          name=str(input("enter name :"))
+#          id=int(input("enter id :"))
+#          age=int(input("enter age :"))
+#          place=str(input("enter place :"))
+#          salary=int(input("enter salary :"))
+#          position=str(input("enter position :"))
+#          experiance=int(input("enter experiance :"))
+#          employ.append([name,id,age,place,salary,position,experiance])
+#     elif choice==2:
+#          for i in employ:
+#               print(i)
+#     elif choice==3:
+#          name=str(input("enter name :"))
+#          f=0
+#          for i in employ:
+#               if name in i:
+#                    choice=int(input("enter your choice :"))
+#                    if choice==1:
+#                         age=int(input("enter age :"))
+#                         i[2]=age
+#                    elif choice==2:
+#                         place=str(input("enter place :"))
+#                         i[3]=place
+#                    elif choice==3:
+#                         salary=int(input("enter salary :"))
+#                         i[4]=salary
+#                    elif choice==4:
+#                         position=str(input("enter position :"))
+#                         i[5]=position
+#                    elif choice==5:
+#                         experiance=int(input("enter experiance :"))
+#                         i[6]=experiance
+#                    f=1           
+#          if f==0:
+#               print('invalid name') 
+#     elif choice==4:
+#          name=str(input("enter name :"))
+#          f=0
+#          for i in employ:
+#               if name in i:
+#                    employ.remove(i)
+#                    f=1
+#          if f==0:
+#               print('invalid name')
+#     elif choice==5:
+#           id=int(input("enter id :"))
+#           for i in employ:
+#                if id in i:
+#                     task=input("enter task :")
+#                     date=datetime.datetime.now().strftime('%x')
+#                     i.append([task,date])
+#                     print(i)
+#     elif choice==6:
+#          name=str(input("enter name :"))
+#          f=0
+#          for i in employ:
+#               if name in i:
+#                    print(i)
+#                    f=1
+#          if f==0:
+#               print('invalid name')         
+#     elif choice==7:
+#          break
+#     else :
+#          print('invalid choice')
+
+
+# tuple
+
+# t=(10,20,30,)
+# print(t)
+
+# t1=(1)
+# print(t1)
+
+# t2=('abc',)
+# t3=(1,)
+# print(t3)
+
+# t=10,11,12
+# print(t)
+
+
+
+# list in tuple
+
+# t=(10,[1,2,3,4],12)
+# # print(t[1])
+# t[1].append(5)
+# print(t)
+
+# modifing tuple 
+
+# t=(1,2,3)
+# l=list(t)
+# # print(l)
+# l.pop()
+# # print(l)
+# t=tuple(l)
+# print(t)
+
+
+
+# t=(1,2,3)
+# l=list(t)
+# # print(l)
+# l.append(5)
+# # print(l)
+# t=tuple(l)
+# print(t)
+
+
+# finding the position and count of the tuple
+
+# t=(1,2,3,4,1,2,3,5,3,6)
+# a=int(input("enter the value :"))
+# c=t.count(a)
+# print(c)
+# pos=0
+# while c>0:
+#     p=t.index(a,pos)
+#     pos=p+1
+#     print('index:',p)
+#     c-=1
