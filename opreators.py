@@ -933,3 +933,73 @@ a=0
 #     pos=p+1
 #     print('index:',p)
 #     c-=1
+
+
+
+
+# Dictionary
+
+# d={'name':'shahid','age':20,'place':'kottayam',}
+# print(d)
+# print(d['name'])
+# print(d['age'])
+# print(d['place'])
+
+# for i in d:
+#     print(i,d[i])
+
+#update value 
+
+# d['age']=22
+# print(d)
+
+
+# add new Key
+
+# d['mark']=82
+# print(d)
+
+# for i in d:
+#     print(i,d[i])
+
+
+# for checking the values
+
+# if d['name']=='shahid':
+#     print('true')
+# else:
+#     print('false')
+
+# print(d.get('name'))
+# print(d.items())
+# print(d.values())
+# for i in d.values ():
+#     print(i)
+# print(d.keys())
+
+# a=d
+# a=d.copy()
+# print(id(a))
+# print(id(d))
+# d['mark']=45
+# print(a)
+# print(d)
+
+# # d.pop('place')
+# # d.popitem()
+# d.setdefault('exp')
+# l=[10,11,12]
+# print(d.fromkeys(l))
+
+
+
+d={}
+name=str(input("enter name :"))
+age=int(input("enter age :"))
+place=str(input("enter place :"))
+
+d['name']=name
+d['age']=age
+d['place']=place
+
+print(d)
