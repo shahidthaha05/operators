@@ -1006,54 +1006,120 @@ a=0
 
 
 
-shop=[{'pname': 'box', 'id': 101, 'stock': 300, 'price': 100},{'pname': 'pen', 'id': 103, 'stock': 200, 'price': 10}]
+# shop=[{'pname': 'box', 'id': 101, 'stock': 300, 'price': 100},{'pname': 'pen', 'id': 103, 'stock': 200, 'price': 10}]
+# while True:
+#     print('''
+# 1.product details
+# 2.view the product 
+# 3.update the product 
+# 4.delet the product
+# 5.exit
+#           ''')
+#     choice=int(input("enter the number :"))
+#     if choice==1:
+#           pname=str(input("enter name :"))
+#           id=int(input("enter id :"))
+#           stock=int(input("enter stock :"))
+#           price=int(input("enter price :"))
+#           shop.append({'pname':name,'id':id,'stock':stock,'price':price})
+#     elif choice==2:
+#          for i in shop:
+#               print(i)
+#     elif choice==3:
+#              name=str(input("enter name :"))
+#              f=0
+#              for i in shop:
+#                    if name == i['pname']:
+#                          print('''
+# 1.upadte stock
+# 2.upadte price
+#                                ''')
+#                          choice=int(input("enter your choice :"))
+#                          if choice==1:
+#                                stock=int(input("enter stock :"))
+#                                i['stock']=stock
+#                          elif choice==2:
+#                                price=int(input("enter price :"))
+#                                i['price']=price
+#                                f=1
+#              if f==0:
+#                    print('invalid name') 
+#     elif choice==4:
+#            name=str(input("enter name :"))
+#            f=0
+#            for i in shop:
+#                  if name == i['pname']:
+#                        shop.remove(i)
+#                        f=1
+#            if f==0:
+#                  print('invalid name')
+#     elif choice==5:
+#           break
+#     else:
+#           print('invalid choice')
+
+
+
+
+
+lib=[{'bname': 'Wuthering Heights', 'id': 101, 'stock': 300, 'price': 500},{'bname': 'Sherlock Holmes', 'id': 102, 'stock': 200, 'price': 600},{'bname': 'goatlife', 'id': 103, 'stock': 200, 'price': 800}]
 while True:
     print('''
-1.product details
-2.view the product 
+1.book details
+2.view the details 
 3.update the product 
 4.delet the product
-5.exit
+5.search product
+6.exit
           ''')
     choice=int(input("enter the number :"))
     if choice==1:
-          pname=str(input("enter name :"))
+          bname=str(input("enter name :"))
           id=int(input("enter id :"))
           stock=int(input("enter stock :"))
           price=int(input("enter price :"))
-          shop.append({'pname':name,'id':id,'stock':stock,'price':price})
+          lib.append({'bname':name,'id':id,'stock':stock,'price':price})
     elif choice==2:
-         for i in shop:
+         for i in lib:
               print(i)
     elif choice==3:
              name=str(input("enter name :"))
              f=0
-             for i in shop:
-                   if name == i['pname']:
-                         print('''
+             for i in lib:
+                  if name == i['bname']:
+                        print('''
 1.upadte stock
 2.upadte price
                                ''')
-                         choice=int(input("enter your choice :"))
-                         if choice==1:
-                               stock=int(input("enter stock :"))
-                               i['stock']=stock
-                         elif choice==2:
-                               price=int(input("enter price :"))
-                               i['price']=price
-                               f=1
-             if f==0:
-                   print('invalid name') 
+                        choice=int(input("enter your choice :"))
+                        if choice==1:
+                              stock=int(input("enter stock :"))
+                              i['stock']=stock
+                        elif choice==2:
+                              price=int(input("enter price :"))
+                              i['price']=price
+                              f=1
+                              if f==0:
+                                    print('invalid name') 
     elif choice==4:
-           name=str(input("enter name :"))
-           f=0
-           for i in shop:
-                 if name == i['pname']:
-                       shop.remove(i)
-                       f=1
-           if f==0:
-                 print('invalid name')
+      name=str(input("enter name :"))
+      f=0
+      for i in lib:
+            if name == i['bname']:
+                  lib.remove(i)
+                  f=1
+                  if f==0:
+                        print('invalid name')
     elif choice==5:
+      name=str(input("enter name :"))
+      f=0
+      for i in lib:
+            if name== i['bname']:
+                  print(i)
+                  f=1
+                  if f==0:
+                        print('invalid name')
+    elif choice==6:
           break
     else:
           print('invalid choice')
