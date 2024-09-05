@@ -1062,64 +1062,132 @@ a=0
 
 
 
-lib=[{'bname': 'Wuthering Heights', 'id': 101, 'stock': 300, 'price': 500},{'bname': 'Sherlock Holmes', 'id': 102, 'stock': 200, 'price': 600},{'bname': 'goatlife', 'id': 103, 'stock': 200, 'price': 800}]
-while True:
-    print('''
-1.book details
-2.view the details 
-3.update the product 
-4.delet the product
-5.search product
-6.exit
-          ''')
-    choice=int(input("enter the number :"))
-    if choice==1:
-          bname=str(input("enter name :"))
-          id=int(input("enter id :"))
-          stock=int(input("enter stock :"))
-          price=int(input("enter price :"))
-          lib.append({'bname':name,'id':id,'stock':stock,'price':price})
-    elif choice==2:
-         for i in lib:
-              print(i)
-    elif choice==3:
-             name=str(input("enter name :"))
-             f=0
-             for i in lib:
-                  if name == i['bname']:
-                        print('''
-1.upadte stock
-2.upadte price
-                               ''')
-                        choice=int(input("enter your choice :"))
-                        if choice==1:
-                              stock=int(input("enter stock :"))
-                              i['stock']=stock
-                        elif choice==2:
-                              price=int(input("enter price :"))
-                              i['price']=price
-                              f=1
-                              if f==0:
-                                    print('invalid name') 
-    elif choice==4:
-      name=str(input("enter name :"))
-      f=0
-      for i in lib:
-            if name == i['bname']:
-                  lib.remove(i)
-                  f=1
-                  if f==0:
-                        print('invalid name')
-    elif choice==5:
-      name=str(input("enter name :"))
-      f=0
-      for i in lib:
-            if name== i['bname']:
-                  print(i)
-                  f=1
-                  if f==0:
-                        print('invalid name')
-    elif choice==6:
-          break
-    else:
-          print('invalid choice')
+# lib=[{'bname': 'Wuthering Heights', 'id': 101, 'stock': 300, 'price': 500},{'bname': 'Sherlock Holmes', 'id': 102, 'stock': 200, 'price': 600},{'bname': 'goatlife', 'id': 103, 'stock': 200, 'price': 800}]
+# while True:
+#     print('''
+# 1.book details
+# 2.view the details 
+# 3.update the product 
+# 4.delet the product
+# 5.search product
+# 6.exit
+#           ''')
+#     choice=int(input("enter the number :"))
+#     if choice==1:
+#           bname=str(input("enter name :"))
+#           id=int(input("enter id :"))
+#           stock=int(input("enter stock :"))
+#           price=int(input("enter price :"))
+#           lib.append({'bname':name,'id':id,'stock':stock,'price':price})
+#     elif choice==2:
+#          for i in lib:
+#               print(i)
+#     elif choice==3:
+#              name=str(input("enter name :"))
+#              f=0
+#              for i in lib:
+#                   if name == i['bname']:
+#                         print('''
+# 1.upadte stock
+# 2.upadte price
+#                                ''')
+#                         choice=int(input("enter your choice :"))
+#                         if choice==1:
+#                               stock=int(input("enter stock :"))
+#                               i['stock']=stock
+#                         elif choice==2:
+#                               price=int(input("enter price :"))
+#                               i['price']=price
+#                               f=1
+#                               if f==0:
+#                                     print('invalid name') 
+#     elif choice==4:
+#       name=str(input("enter name :"))
+#       f=0
+#       for i in lib:
+#             if name == i['bname']:
+#                   lib.remove(i)
+#                   f=1
+#                   if f==0:
+#                         print('invalid name')
+#     elif choice==5:
+#       name=str(input("enter name :"))
+#       f=0
+#       for i in lib:
+#             if name== i['bname']:
+#                   print(i)
+#                   f=1
+#                   if f==0:
+#                         print('invalid name')
+#     elif choice==6:
+#           break
+#     else:
+#           print('invalid choice')
+
+
+
+
+
+# data=[{'name':'a','age':20},{'name':'b','age':30},{'name':'c','age':45}]
+# print('{:<10} {:<10}'.format("name","age"))
+# print('-'*20)
+# for i in data:
+#        if i['age']<=30:
+#               print('{:<10} {:<10}'.format(i["name"],i["age"]))
+#        elif i['age']>30:
+#               print('{:<10} {:<10}'.format("name","age"))
+#               print('-'*20)
+
+
+
+
+# data=[{'name':'a','age':20},{'name':'b','age':30},{'name':'c','age':45}]
+# a=[]
+# b=[]
+# for i in data:
+#     if i['age']>30:
+#         a.append(i)
+#     else:
+#         b.append(i)
+# print(a)
+# print(b)
+
+
+
+# data=[{'name':'a','age':20},{'name':'b','age':30},{'name':'c','age':45}]
+# b=[i for i in data if i['age']>30]
+# a=[i for i in data if i['age']<=30]
+# print(a)
+# print(b)
+
+
+# odd or even using 
+
+# l=[1,2,3,4,5,6,7,8,9,10]
+# o=[i for i in l if i%2!=0]
+# e=[i for i in l if i%2==0]
+# print(o)
+# print(e)
+
+
+
+numbers={0:'zero',1:'one',2:'two',3:'three',4:'four',5:'five',6:'six',7:'seven',8:'eight',9:'nine'}
+a=int(input("enter the number :"))
+print(numbers)
+
+
+
+
+
+
+
+
+# a=int(input("enter a number : "))
+# rev=0
+# for i in range(a):
+#     d=a%10
+#     rev=rev*10+d
+#     a//=10
+#     if a==0:
+#         break
+# print(rev)
