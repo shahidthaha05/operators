@@ -1171,23 +1171,25 @@ a=0
 
 
 
-numbers={0:'zero',1:'one',2:'two',3:'three',4:'four',5:'five',6:'six',7:'seven',8:'eight',9:'nine'}
-a=int(input("enter the number :"))
-print(numbers)
+# convert value to digit 
+
+# dict={0:'zero',1:'one',2:'two',3:'three',4:'four',5:'five',6:'six',7:'seven',8:'eight',9:'nine'}
+# num=int(input("enter the number :"))
+# s=''
+# while num>0:
+#     d=num%10
+#     s=dict[d]+' '+s
+#     num//=10
+# print(s)
 
 
 
 
+l=[{'name':'a','age':20,'project':['ems','sms']}]
+a=str(input("enter the word :"))
+for i in l:
+    i['project'].append(a)
+    print(i)
 
 
 
-
-# a=int(input("enter a number : "))
-# rev=0
-# for i in range(a):
-#     d=a%10
-#     rev=rev*10+d
-#     a//=10
-#     if a==0:
-#         break
-# print(rev)
