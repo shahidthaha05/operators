@@ -1185,11 +1185,71 @@ a=0
 
 
 
-l=[{'name':'a','age':20,'project':['ems','sms']}]
-a=str(input("enter the word :"))
-for i in l:
-    i['project'].append(a)
-    print(i)
+# l=[{'name':'a','age':20,'project':['ems','sms']}]
+# a=str(input("enter the word :"))
+# for i in l:
+#     i['project'].append(a)
+#     print(i)
+
+
+# set
+
+# s={1,2,3,4,'abc',8.5,7,1}
+
+# # for i in s:
+# #     print(i)
+ 
+# # if 7 in s:
+# #     print('true')
+# # else:
+# #     print('false')
+
+# print(s)
+
+# remove duplicate values from list using set
+
+# l=[1,2,3,4,1,2,3,5]
+# s=set(l)
+# print(s)
+# l=list(s)
+# print(l)
+
+
+# for add a value to an empty set
+
+# s=set()   [for creating an empty set]
+# s=set() 
+# s.add(10)
+# print(s)
+
+# for deleting a unknown value from set
+
+# s={10,11,12}
+# s.pop()
+# print(s)
+
+# s.discard(12)
+# print(s)
+
+# remove the  specific value
+
+# s.remove(12)
+# print(s)
 
 
 
+
+s={1,2,3,4,5,6}
+s1={1,2,3,6}
+# print(s1.difference(s))
+# print(s.union(s1))
+# print(s.intersection(s1))
+# print(s.symmetric_difference(s1))
+s2={6,7,8,9}
+# print(s.isdisjoint(s2))
+# print(s.issubset(s2))
+# print(s.issuperset(s2))
+# s.update({10,11,12})
+# print(s)
+s.different_update(s2)
+print(s)
