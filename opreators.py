@@ -1239,17 +1239,70 @@ a=0
 
 
 
-s={1,2,3,4,5,6}
-s1={1,2,3,6}
-# print(s1.difference(s))
-# print(s.union(s1))
-# print(s.intersection(s1))
-# print(s.symmetric_difference(s1))
-s2={6,7,8,9}
-# print(s.isdisjoint(s2))
-# print(s.issubset(s2))
-# print(s.issuperset(s2))
-# s.update({10,11,12})
+# s={1,2,3,4,5,6}
+# s1={1,2,3,6}
+# # print(s1.difference(s))
+# # print(s.union(s1))
+# # print(s.intersection(s1))
+# # print(s.symmetric_difference(s1))
+# s2={6,7,8,9}
+# # print(s.isdisjoint(s2))
+# # print(s.issubset(s2))
+# # print(s.issuperset(s2))
+# # s.update({10,11,12})
+# # print(s)
+# s.different_update(s2)
 # print(s)
-s.different_update(s2)
-print(s)
+
+# set program
+
+# s=set()
+# a=int(input("enter the limit :"))
+# for i in range(a) : 
+#     name=str(input("enter the name :"))
+#     s.add(name)
+#     print(s)
+
+
+
+# php=set()
+# java=set()
+# python=set()
+# a=int(input("enter the limit :"))
+# for i in range(a) : 
+#     name=str(input("enter the name :"))
+#     php.add(name)
+#     java.add(name)
+#     python.add(name)
+#     print(php)
+#     print(java)
+#     print(python)
+
+
+
+
+php=set()
+java=set()
+python=set()
+
+
+php={'a','b','c'}
+a=int(input("enter the limit :"))
+for i in range(a) : 
+    name=str(input("enter the name :"))
+    php.add(name)
+    print(php)
+
+java=set('a','d','c','e')
+a=int(input("enter the limit :"))
+for i in range(a) : 
+    name=str(input("enter the name :"))
+    java.add(name)
+    print(java)
+
+python=set()
+a=int(input("enter the limit :"))
+for i in range(a) : 
+    name=str(input("enter the name :"))
+    python.add(name)
+    print(python)
