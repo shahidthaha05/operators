@@ -1281,28 +1281,80 @@ a=0
 
 
 
-php=set()
-java=set()
-python=set()
+# php=set()
+# java=set()
+# python=set()
 
 
-php={'a','b','c'}
-a=int(input("enter the limit :"))
-for i in range(a) : 
-    name=str(input("enter the name :"))
-    php.add(name)
-    print(php)
+# php={'a','b','c'}
+# a=int(input("enter the limit :"))
+# for i in range(a) : 
+#     name=str(input("enter the name :"))
+#     php.add(name)
+#     print(php)
 
-java=set('a','d','c','e')
-a=int(input("enter the limit :"))
-for i in range(a) : 
-    name=str(input("enter the name :"))
-    java.add(name)
-    print(java)
+# java=set('a','d','c','e')
+# a=int(input("enter the limit :"))
+# for i in range(a) : 
+#     name=str(input("enter the name :"))
+#     java.add(name)
+#     print(java)
 
-python=set()
-a=int(input("enter the limit :"))
-for i in range(a) : 
-    name=str(input("enter the name :"))
-    python.add(name)
-    print(python)
+# python=set()
+# a=int(input("enter the limit :"))
+# for i in range(a) : 
+#     name=str(input("enter the name :"))
+#     python.add(name)
+#     print(python)
+
+
+# set of program using method
+
+# php={'a','b','c'}
+# java={'a','b','d','e'}
+# python={'a','b','c','f','g'}
+# s=php.difference(java).difference(python)
+# s1=java.difference(php).difference(python)
+# s2=python.difference(java).difference(php)
+# # print(s)
+# # print(s1)
+# # print(s2)
+# f=s.union(s1).union(s2)
+# print(f)
+
+
+# function
+
+# def new():
+#     print('welcome')
+#     print('morning')
+#     print('night')
+# new()
+# a=[1,2,3,4,5,6]
+# print(a)
+# a.append(10)
+# new()
+# a=[1,2,3,4,5,6]
+# print(a)
+# a.append(10)
+# new()
+
+
+
+# function variables
+
+# def new():
+#     b=10       #local variable
+#     print('inside the function a=',a)
+#     print('inside the function b=',b)
+# a=20            #global variable
+# new()
+# print('outside the function a=',a)
+# print('outside the function a=',b)
+
+def new():
+    a=10       #local variable
+    print('inside the function a=',a)
+a=20            #global variable
+new()
+print('outside the function a=',a)
