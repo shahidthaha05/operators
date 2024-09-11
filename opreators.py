@@ -1352,9 +1352,74 @@ a=0
 # print('outside the function a=',a)
 # print('outside the function a=',b)
 
-def new():
-    a=10       #local variable
-    print('inside the function a=',a)
-a=20            #global variable
-new()
-print('outside the function a=',a)
+# def new():
+#     a=10       #local variable
+#     print('inside the function a=',a)
+# a=20            #global variable
+# new()
+# print('outside the function a=',a)
+
+# return
+
+# def sample():
+#     a=10
+#     b=20
+#     return 'welcome',a,b
+# # print(sample())
+# c,a1,b1=sample()
+# print(a1)
+# print(b1)
+# print(c)
+
+# calculator using function
+
+
+# def number():
+#     a=int(input("enter no :"))
+#     b=int(input("enter no :"))
+#     return a,b
+
+# while True:
+#     print('''
+# 1.addition
+# 2.substraction
+# 3.multiplication
+# 4.division
+# 5.floor division
+# 6.modules
+# 7.exponenet
+# 8.exit    
+#     ''')
+
+#     choice=int(input("enter the choice :"))
+#     if choice==1:
+#         a,b=number()
+#         print(a+b)
+#     elif choice==2:
+#         a,b=number()
+#         print(a-b)
+#     elif choice==3:
+#         a,b=number()
+#         print(a*b)
+#     elif choice==4:
+#         a,b=number()
+#         print(a/b)
+#     elif choice==5:
+#         a,b=number()
+#         print(a//b)
+#     elif choice==6:
+#         a,b=nuber()
+#         print(a%b)
+#     elif choice==7:
+#         a,b=number()
+#         print(a**b)
+#     elif choice==8:
+#         break
+#     else:
+#         print('invalid')
+
+
+
+def sample():
+    print(a,b)
+sample(10,20)
