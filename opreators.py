@@ -1420,6 +1420,66 @@ a=0
 
 
 
-def sample():
-    print(a,b)
-sample(10,20)
+# def sample():
+#     print(a,b)
+# sample(10,20)
+
+
+# def sample(name='sha',age=20):
+#     print(name,age)
+
+# sample('sh',22)
+# sample(age=30)
+# sample('njn',33)
+
+
+# def sample(*a):
+#     print(a)
+
+# sample()
+# sample('hellooo','hi')
+# sample('helo','welcome',10,2,0,)
+
+
+# def sample(**a):
+#     print(a)
+
+# sample()
+# sample(name='shahid',age=20)
+
+
+
+def login():
+    uname=input("enter uname :")
+    passw=input("enter passw :")
+    f=0
+    if uname == 'admin' and passw == 'admin':
+        f=1
+    return f
+
+
+
+
+
+while True:
+    print('''
+1.login
+2.exit    
+    ''')
+    choice=int(input("enter the choice :"))
+    if choice==1:
+        f=login()
+        if f==1:
+            while True:
+                print('''
+                1.add employ
+                2.view 
+                3.update 
+                4.delete
+                5.exit''')
+        else:
+            print('invalid login')
+    elif choice==2:
+        break
+    else:
+        print('invalid login')
