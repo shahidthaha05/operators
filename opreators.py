@@ -1448,16 +1448,60 @@ a=0
 # sample(name='shahid',age=20)
 
 
-
+emp=[]
 def login():
     uname=input("enter uname :")
     passw=input("enter passw :")
     f=0
     if uname == 'admin' and passw == 'admin':
         f=1
+    for i in emp:
+        if uname.isdigit():
+            uname=int(uname)
+            if uname==i['id'] and passw==i['dob']:
+                f=2
     return f
-
-
+def add_emp():
+    id=int(input("enter the id :"))
+    f1=0
+    for i in emp:
+        if i['id']==id:
+            f1=1
+            add_emp()
+    if f1==0:
+        name=str(input("enter the name :"))
+        salary=int(input("enter salary :"))
+        dob=str(input("enter dob :"))
+        position=str(input("enter the position :"))
+        emp.append({'id':id,'name':name,'salary':salary,'dob':dob,'position':position})
+def view_emp():
+    id=int(input("enter the id :"))
+    f1=0
+    for i in emp:
+        print(i)
+    if f1==0:
+        print('invalid id')
+def update_emp():
+    id=int(input("enter the id :"))
+    f1=0
+    for i in emp:
+        if i['id']==id:
+            f1=1
+            salary=int(input("enter the salary :"))
+            position=str(input("enter position :"))
+            i['salary']=salary
+            i['position']=position
+    if f1==0:
+        print('invalid id')
+def delete_emp():
+    id=int(input("enter the id :"))
+    f1=0
+    for i in emp:
+        if i['id']==id:
+            f1=1
+            emp.remove(i)
+    if f1==0:
+        print('invalid id')
 
 
 
@@ -1476,7 +1520,22 @@ while True:
                 2.view 
                 3.update 
                 4.delete
-                5.exit''')
+                5.logout''')
+
+                sub_choice=int(input("enter the choice :"))
+                if sub_choice==1:
+                    add_emp()
+                elif sub_choice==2:
+                    view_emp()
+                elif sub_choice==3:
+                    update_emp()
+                elif sub_choice==4:
+                    delete_emp()
+                elif sub_choice==5:
+                    break
+        elif f==2:
+            print('user login ')
+
         else:
             print('invalid login')
     elif choice==2:
