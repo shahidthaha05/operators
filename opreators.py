@@ -1448,97 +1448,153 @@ a=0
 # sample(name='shahid',age=20)
 
 
-emp=[]
-def login():
-    uname=input("enter uname :")
-    passw=input("enter passw :")
-    f=0
-    if uname == 'admin' and passw == 'admin':
-        f=1
-    for i in emp:
-        if uname.isdigit():
-            uname=int(uname)
-            if uname==i['id'] and passw==i['dob']:
-                f=2
-    return f
-def add_emp():
-    id=int(input("enter the id :"))
-    f1=0
-    for i in emp:
-        if i['id']==id:
-            f1=1
-            add_emp()
-    if f1==0:
-        name=str(input("enter the name :"))
-        salary=int(input("enter salary :"))
-        dob=str(input("enter dob :"))
-        position=str(input("enter the position :"))
-        emp.append({'id':id,'name':name,'salary':salary,'dob':dob,'position':position})
-def view_emp():
-    id=int(input("enter the id :"))
-    f1=0
-    for i in emp:
-        print(i)
-    if f1==0:
-        print('invalid id')
-def update_emp():
-    id=int(input("enter the id :"))
-    f1=0
-    for i in emp:
-        if i['id']==id:
-            f1=1
-            salary=int(input("enter the salary :"))
-            position=str(input("enter position :"))
-            i['salary']=salary
-            i['position']=position
-    if f1==0:
-        print('invalid id')
-def delete_emp():
-    id=int(input("enter the id :"))
-    f1=0
-    for i in emp:
-        if i['id']==id:
-            f1=1
-            emp.remove(i)
-    if f1==0:
-        print('invalid id')
 
 
 
+
+
+# emp=[]
+# def login():
+#     uname=input("enter uname :")
+#     passw=input("enter passw :")
+#     f=0
+#     user=''
+#     if uname == 'admin' and passw == 'admin':
+#         f=1
+#     for i in emp:
+#         if uname.isdigit():
+#             uname=int(uname)
+#             if uname==i['id'] and passw==i['password']:
+#                 f=2
+#                 user=i
+#     return f,user
+# def add_emp():
+#     id=int(input("enter the id :"))
+#     f1=0
+#     for i in emp:
+#         if i['id']==id:
+#             f1=1
+#             add_emp()
+#     if f1==0:
+#         name=str(input("enter the name :"))
+#         salary=int(input("enter salary :"))
+#         dob=str(input("enter dob :"))
+#         position=str(input("enter the position :"))
+#         password=dob
+#         emp.append({'id':id,'name':name,'salary':salary,'dob':dob,'position':position,'password':password})
+# def view_emp():
+#     id=int(input("enter the id :"))
+#     f1=0
+#     for i in emp:
+#         print(i)
+#     if f1==0:
+#         print('invalid id')
+# def update_emp():
+#     id=int(input("enter the id :"))
+#     f1=0
+#     for i in emp:
+#         if i['id']==id:
+#             f1=1
+#             salary=int(input("enter the salary :"))
+#             position=str(input("enter position :"))
+#             i['salary']=salary
+#             i['position']=position
+#     if f1==0:
+#         print('invalid id')
+# def delete_emp():
+#     id=int(input("enter the id :"))
+#     f1=0
+#     for i in emp:
+#         if i['id']==id:
+#             f1=1
+#             emp.remove(i)
+#     if f1==0:
+#         print('invalid id')
+
+# def profile(user):
+#     print(user)
+# def pro_update(user):
+#     name=str(input("enter the name :"))
+#     dob=str(input("enter dob :"))
+#     user['name']=name
+#     user['dob']=dob
+
+# while True:
+#     print('''
+# 1.login
+# 2.exit    
+#     ''')
+#     choice=int(input("enter the choice :"))
+#     if choice==1:
+#         f,user=login()
+#         if f==1:
+#             while True:
+#                 print('''
+#                 1.add employ
+#                 2.view 
+#                 3.update 
+#                 4.delete
+#                 5.logout''')
+
+#                 sub_choice=int(input("enter the choice :"))
+#                 if sub_choice==1:
+#                     add_emp()
+#                 elif sub_choice==2:
+#                     view_emp()
+#                 elif sub_choice==3:
+#                     update_emp()
+#                 elif sub_choice==4:
+#                     delete_emp()
+#                 elif sub_choice==5:
+#                     break
+#         elif f==2:
+#             if user['dob']==user['password']:
+#                 password=input("enter new password :")
+#                 user['password']=password
+#             while True:
+#                 print('''
+# 1.view profile
+# 2.update profile
+# 3.log out
+#                 ''')
+#                 sub_choice=int(input("enter the number :"))
+#                 if sub_choice==1:
+#                     profile(user)
+#                 elif sub_choice==2:
+#                     pro_update(user)
+#                 elif sub_choice==3:
+#                     break
+#         else:
+#             print('invalid login')
+#     elif choice==2:
+#         break
+#     else:
+#         print('invalid login')
+
+
+user=[]
+lib=[]
+def register():
+    name=str(input("enter the name :"))
+    id=int(input("enter the id :"))
+    email=str(input("enter the email :"))
+    username=email
+    phone=int(input("enter the no :"))
+    password=input("enter password :")
+    user.append({'name':name,'id':id,'phone':phone,'password':password})
 while True:
     print('''
-1.login
-2.exit    
+1.register
+2.login
+3.exit 
     ''')
     choice=int(input("enter the choice :"))
     if choice==1:
-        f=login()
-        if f==1:
-            while True:
-                print('''
-                1.add employ
-                2.view 
-                3.update 
-                4.delete
-                5.logout''')
-
-                sub_choice=int(input("enter the choice :"))
-                if sub_choice==1:
-                    add_emp()
-                elif sub_choice==2:
-                    view_emp()
-                elif sub_choice==3:
-                    update_emp()
-                elif sub_choice==4:
-                    delete_emp()
-                elif sub_choice==5:
-                    break
-        elif f==2:
-            print('user login ')
-
-        else:
-            print('invalid login')
+        register()
     elif choice==2:
+        for i in user:
+            print(i)
+    elif choice==3:
         break
     else:
-        print('invalid login')
+        print('invalid')
