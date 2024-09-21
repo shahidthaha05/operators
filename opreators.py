@@ -1592,7 +1592,7 @@ def register():
         username=email
         phone=int(input("enter the no :"))
         password=str(input("enter password :"))
-        user.append({'name':name,'id':id,'email':email,'phone':phone,'username':username,'password':password})
+        user.append({'name':name,'id':id,'email':email,'phone':phone,'books':[],'username':username,'password':password})
 
 def login():
     uname=input("enter uname : ")
@@ -1605,14 +1605,13 @@ def login():
         if uname == i['email'] and passw == i['password']:
             f=2
             cust=i
-    return f,user
+    return f,cust
 
 def add_book():
     if len(lib)==0:
         id=101
     else:
         id=lib[-1]['id']+1
-        id=int(input("enter the id : "))
     f=0
     for i in lib:
         if i['id']==id:
@@ -1656,14 +1655,39 @@ def view_user():
         print('name',i['name'])
         print('id',i['id'])
         print('email',i['email'])
-        print('phone no',i['phone no'])
+        print('phone',i['phone'])
+
+def view_profile(user):
+    print(user)
+
+
+def update_pro(user):
+    name=str(input("enter the name : "))
+    phone=int(input("enter phone : "))
+    i['name']=name
+    i['phone']=phone
+    
+def lend_book(user):
+    id=int(input("enter the id : "))
+    f=0
+    for i in lib:
+        if i['id']==id:
+            f=1
+            i['stock']-=1
+            user['books'].append(id)
+            print('book added')
+    if f==0:
+        print("invalid id")
+
+def return_book():
+    
 
 while True:
     print('''
 1.register
 2.login
 3.exit 
-    ''')
+''')
     choice=int(input("enter the choice :"))
     if choice==1:
         register()
@@ -1695,7 +1719,27 @@ while True:
                 else:
                     print('invalid choice')
         elif f==2:
-            print('user login')
+            while True:
+                print('''
+                1.view profile
+                2.view book
+                3.update profile
+                4.lend book
+                5.exit
+                ''')
+                sub_ch=int(input("enter the choice : "))
+                if sub_ch==1:
+                    view_profile(user)
+                elif sub_ch==2:
+                    view_book()
+                elif sub_ch==3:
+                    update_pro(user)
+                elif sub_ch==4:
+                    lend_book(user)
+                elif sub_ch==5:
+                    break
+                else:
+                    print("invalid choice")
         else:
             print('invalid username or password')
     elif choice==3:
