@@ -1664,8 +1664,8 @@ def view_profile(user):
 def update_pro(user):
     name=str(input("enter the name : "))
     phone=int(input("enter phone : "))
-    i['name']=name
-    i['phone']=phone
+    cust['name']=name
+    cust['phone']=phone
     
 def lend_book(user):
     id=int(input("enter the id : "))
@@ -1692,7 +1692,7 @@ while True:
     if choice==1:
         register()
     elif choice==2:
-        f,user=login()
+        f,cust=login()
         if f==1:
             while True:
                 print('''
@@ -1735,7 +1735,7 @@ while True:
                 elif sub_ch==3:
                     update_pro(user)
                 elif sub_ch==4:
-                    lend_book()
+                    lend_book(user)
                 elif sub_ch==5:
                     break
                 else:
