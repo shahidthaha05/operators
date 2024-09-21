@@ -1650,7 +1650,7 @@ def delete():
     if f==0:
         print('invalid id')
 
-def view_user():
+def view_user(user):
     for i in user:
         print('name',i['name'])
         print('id',i['id'])
@@ -1679,14 +1679,14 @@ def lend_book(user):
     if f==0:
         print("invalid id")
 
-def return_book():
-    
+
+
 
 while True:
     print('''
-1.register
-2.login
-3.exit 
+    1.register
+    2.login
+    3.exit 
 ''')
     choice=int(input("enter the choice :"))
     if choice==1:
@@ -1713,7 +1713,7 @@ while True:
                 elif sub_choice==4:
                     delete()
                 elif sub_choice==5:
-                    view_user()
+                    view_user(user)
                 elif sub_choice==6:
                     break
                 else:
@@ -1735,7 +1735,7 @@ while True:
                 elif sub_ch==3:
                     update_pro(user)
                 elif sub_ch==4:
-                    lend_book(user)
+                    lend_book()
                 elif sub_ch==5:
                     break
                 else:
