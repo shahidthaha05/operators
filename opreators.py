@@ -1771,7 +1771,7 @@ a=0
 # lanbda function
 
 
-# lambda using even numbers
+# filter using even numbers
 
 # l=[1,2,3,4,5,6,7,8]
 # print(list(filter(lambda x:x%2!=0,l)))
@@ -1779,5 +1779,23 @@ a=0
 # lambda using in a word to find letters
 
 
-l=['welcome','apple','kiwi','hello']
-print(list(filter(lambda x: 'a' in x,l)))
+# l=['welcome','apple','kiwi','hello']
+# print(list(filter(lambda x: 'e' in x,l)))
+
+
+
+# map using in lambda
+
+# l=[1,2,3,4,5,6,7]
+# # print(list(map(lambda x:x+10,l)))
+
+# def num(x):
+#     return x+10
+# print(list(map(num,l)))
+
+
+
+
+
+
+
