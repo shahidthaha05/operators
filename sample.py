@@ -29,7 +29,10 @@ function_name()
 # print(a)
 
 
-from sample1 import *
+# from sample1 import *
 
-new()
-print(a)
+# new()
+# print(a)
+
+
+

@@ -587,16 +587,11 @@ a=0
 # l.pop()
 # # print(l)
 
-# pop Index
-
-# l.pop(1)
-# print(l)
-
-
-# remove
-
-# l.remove(30)
-# print(l)
+# a=input("enter the word : ")
+# rev=""
+# for i in a:
+#     rev=i+rev
+# print(rev)
 
 
 
@@ -1794,8 +1789,52 @@ a=0
 # print(list(map(num,l)))
 
 
+# file handling
+
+# modes
+
+# create ---> x
+# read  ---> r
+# write ---> w
+# append ---> a
 
 
 
+# f=open('demoo.txt','x')
+# f.write('welcome')
+# f.write('hello')
+# f.write('123')
 
 
+
+# f=open('demoo.txt','r')
+# a=f.read()
+# print(a)
+# f.seek(0)
+# b=f.read(10)
+# print(b)
+
+
+# f=open('demoo.txt','r')
+# a=f.readline(5)
+# print(a)
+# b=f.readline()
+# print(b)
+# c=f.readline()
+# print(c)
+
+
+# f=open('demoo.txt','r')
+# a=f.readlines()
+# print(a)
+# print(len(a))
+# print(f.tell())
+
+
+f=open('demoo.txt','r')
+a=f.readlines()
+l=len(a)
+f.seek(0)
+for i in range(l):
+    b=f.readline().strip()
+    print(b[::-1])
