@@ -1831,10 +1831,70 @@ a=0
 # print(f.tell())
 
 
-f=open('demoo.txt','r')
-a=f.readlines()
-l=len(a)
-f.seek(0)
-for i in range(l):
-    b=f.readline().strip()
-    print(b[::-1])
+# reverse 
+
+# f=open('demoo.txt','r')
+# a=f.readlines()
+# l=len(a)
+# f.seek(0)
+# for i in range(l):
+#     b=f.readline().strip()
+#     print(b[::-1])
+
+
+
+# count of letters and count of cap and small letters
+
+# f=open('demoo.txt','r')
+# a=f.readlines()
+# l=len(a)
+# letter=0
+# cap=0
+# f.seek(0)
+# for i in range(l):
+#     b=f.readline().strip()
+#     for i in b:
+#         if i !=' ':  
+#             letter+=1
+#             if i.isupper():
+#                 cap+=1
+# print(letter)
+# print('cap',cap)
+# print('small',letter-cap)
+
+
+
+# count of words
+
+# f=open('demoo.txt','r')
+# a=f.readlines()
+# l=len(a)
+# word=0
+# f.seek(0)
+# for i in range(l):
+#     b=f.readline().strip()
+#     a=b.split(' ')
+#     for j in a:
+#         if j!='':
+#             word+=1
+# print(word)
+
+
+# write
+
+f=open('demoo.txt','w')
+f.write('welcome')
+f.write('123')
+f.write('hi'+'hello')
+
+
+
+f=open('new.txt','w')
+f.write('hello')
+f.write('123')
+f.write('hello'+'welcome')
+
+
+a=int(input("enter a number : "))
+for i in range(1,11):
+    print(i,'*',a,'=',a*i)
