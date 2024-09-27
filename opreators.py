@@ -1882,19 +1882,81 @@ a=0
 
 # write
 
-f=open('demoo.txt','w')
-f.write('welcome')
-f.write('123')
-f.write('hi'+'hello')
+# f=open('demoo.txt','w')
+# f.write('welcome')
+# f.write('123')
+# f.write('hi'+'hello')
 
 
 
-f=open('new.txt','w')
-f.write('hello')
-f.write('123')
-f.write('hello'+'welcome')
+# f=open('new.txt','w')
+# f.write('hello')
+# f.write('123')
+# f.write('hello'+'welcome')
 
 
-a=int(input("enter a number : "))
-for i in range(1,11):
-    print(i,'*',a,'=',a*i)
+# MULTIPLICATION USING WRITE
+
+# f=open('new.txt','w')
+# n=int(input("enter a number : "))
+# for i in range(1,11):
+#     for j in range(1,n+1):
+#         mult=j*i
+#         f.write(f'{i} x {j} = {mult}\t')
+#     f.write('\n') 
+
+
+
+# append
+
+# f=open('demoo.txt','a')
+# f.write('java')
+
+
+# delete
+
+import os
+# os.remove('sample1.py')
+
+# if os.path.exists('sample1.py'):
+#     os.remove('sample1.py')
+# else:
+#     print('invalid file')
+
+
+
+# import datetime
+# x=datetime.datetime.now().strftime('%a')            short form of date
+# print(x)
+
+# import datetime
+# x=datetime.datetime.now().strftime('%A')            full-form of date
+# print(x)
+
+# import datetime
+# x=datetime.datetime.now().strftime('%b')           short of month
+# print(x)
+
+
+# import datetime
+# x=datetime.datetime.now().strftime('%B')            full of month
+# print(x)
+
+
+# import datetime
+# x=datetime.datetime.now().strftime('%Y')                current year
+# print(x)
+
+
+# import datetime
+# x=datetime.datetime.now().strftime('%y')
+# print(x)
+
+
+import math
+
+
+# print(math.ceil(11.1))                  
+# print(math.floor(11.9))
+# print(math.factorial(5))
+# print(math.sqrt(64))
