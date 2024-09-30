@@ -1916,6 +1916,8 @@ a=0
 # delete
 
 import os
+
+
 # os.remove('sample1.py')
 
 # if os.path.exists('sample1.py'):
@@ -1960,3 +1962,46 @@ import math
 # print(math.floor(11.9))
 # print(math.factorial(5))
 # print(math.sqrt(64))
+
+
+
+# class syn:
+#     def python():
+#         print('python prgrm')
+#     def java():
+#         print('java prgrm')
+#     def php():
+#         print('php prgrm')
+
+# manu=syn
+# manu.python()
+# akhil=syn
+# akhil.php()
+
+
+class bank:
+    def __init__(s):
+        s.name=input('name')
+        s.age=int(input('age'))
+        s.bal=0
+
+
+    def deposit(self,amt):
+        self.bal+=amt
+        print('deposit')
+    def withdrow(self,amt):
+        self.bal-=amt
+        print('withdrow')
+    def balance(self):
+        print('balance',self.bal)
+
+obj=bank()
+obj.deposit(5000)
+obj.balance()
+obj.withdrow(2000)
+obj.balance()
+print(obj.bal)
+
+obj1=bank()
+obj1.deposit(1000)
+obj1.balance()
