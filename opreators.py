@@ -1979,29 +1979,111 @@ import math
 # akhil.php()
 
 
-class bank:
-    def __init__(s):
-        s.name=input('name')
-        s.age=int(input('age'))
-        s.bal=0
+# class bank:
+#     def __init__(s):
+#         s.name=input('name')
+#         s.age=int(input('age'))
+#         s.bal=0
 
 
-    def deposit(self,amt):
-        self.bal+=amt
-        print('deposit')
-    def withdrow(self,amt):
-        self.bal-=amt
-        print('withdrow')
-    def balance(self):
-        print('balance',self.bal)
+#     def deposit(self,amt):
+#         self.bal+=amt
+#         print('deposit')
+#     def withdrow(self,amt):
+#         self.bal-=amt
+#         print('withdrow')
+#     def balance(self):
+#         print('balance',self.bal)
 
-obj=bank()
-obj.deposit(5000)
-obj.balance()
-obj.withdrow(2000)
-obj.balance()
-print(obj.bal)
+# obj=bank()
+# obj.deposit(5000)
+# obj.balance()
+# obj.withdrow(2000)
+# obj.balance()
+# print(obj.bal)
 
-obj1=bank()
-obj1.deposit(1000)
-obj1.balance()
+# obj1=bank()
+# obj1.deposit(1000)
+# obj1.balance()
+
+
+
+# inheritance
+
+# single inheritance
+
+# class syn:
+#     def python(self):
+#         # self a=10
+#         print('python')
+#     def php(self):
+#         print('php')
+#     def java(self):
+#         print('java')
+
+# class novavi(syn):
+#     def dm(self):
+#         print('dm wrkr')
+#     def web(self):
+#         print('web')
+
+# n=novavi()
+# n.dm()
+# n.python()
+# n.a()
+
+# std1=syn()
+# std1.python()
+
+
+# multiple inheritance
+
+# class school:
+#     def english(self):
+#         print('english')
+#     def science(self):
+#         print('science')
+
+# class tution:
+#     def maths(self):
+#         print('maths')
+#     def computer(self):
+#         print('computer')
+
+# class std(school,tution):
+#     def art(self):
+#         print('art')
+
+# shahid=std()
+# shahid.maths()
+# shahid.art()
+# shahid.english()
+
+
+# multilevel inheritance
+
+
+class c_u():
+    def exam(self):
+        print('exam')
+    def result(self):
+        print('result')
+
+class clg(c_u):
+    def notes(self):
+        print('notes')
+    def prgrms(self):
+        print('prgrms')
+
+class std(clg):
+    def uniform(self):
+        print('unifrom')
+    def lab(self):
+        print('lab')
+
+
+shahid=std()
+shahid.lab()
+shahid.exam()
+shahid.prgrms()
+
