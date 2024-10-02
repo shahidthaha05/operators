@@ -2063,27 +2063,120 @@ import math
 # multilevel inheritance
 
 
-class c_u():
-    def exam(self):
-        print('exam')
-    def result(self):
-        print('result')
+# class c_u():
+#     def exam(self):
+#         print('exam')
+#     def result(self):
+#         print('result')
 
-class clg(c_u):
-    def notes(self):
-        print('notes')
-    def prgrms(self):
-        print('prgrms')
+# class clg(c_u):
+#     def notes(self):
+#         print('notes')
+#     def prgrms(self):
+#         print('prgrms')
 
-class std(clg):
-    def uniform(self):
-        print('unifrom')
-    def lab(self):
-        print('lab')
+# class std(clg):
+#     def uniform(self):
+#         print('unifrom')
+#     def lab(self):
+#         print('lab')
 
 
-shahid=std()
-shahid.lab()
-shahid.exam()
-shahid.prgrms()
+# shahid=std()
+# shahid.lab()
+# shahid.exam()
+# shahid.prgrms()
 
+
+
+# hirarchieal inheritance
+
+# one parent and morethan one child
+
+
+# class syn:
+#     def python(self):
+#         print('python')
+#     def php(self):
+#         print('php')
+
+# class non_teaching_staff(syn):
+#     def administration(self):
+#         print('administration')
+
+# class teaching_staff(syn):
+#     def python_course(self):
+#         print('python course')
+
+
+# staff1=non_teaching_staff()
+# staff2=teaching_staff()
+# staff1.python()
+# staff1. administration()
+# staff2.php()
+# staff2.python_course()
+
+# hybrid inheritance
+
+# class syn:
+#     def python(self):
+#         print('python')
+#     def php(self):
+#         print('php')
+
+# class non_teaching_staff(syn):
+#     def administration(self):
+#         print('administration')
+
+# class teaching_staff(syn):
+#     def python_course(self):
+#         print('python course')
+
+# class student(teaching_staff):
+#     def notes(self):
+#         print('notes')
+
+
+# staff1=non_teaching_staff()
+# staff2=teaching_staff()
+# staff1.python()
+# staff1. administration()
+# staff2.php()
+# staff2.python_course()
+# std=student()
+# std.notes()
+# std.python_course()
+# std.php()
+
+
+
+# class animal():
+#     def animals(self):
+#         print('animals')
+
+# class dog(animal):
+#     def dogs(self):
+#         print('dogs')
+
+# class cat(animal):
+#     def cats(self):
+#         print('cats')
+
+# class persian_cat(cat):
+#     def persian_cats(self):
+#         print('persian cats')
+
+
+# a=animal()
+# d=dog()
+# c=cat()
+# p=persian_cat()
+
+# a.animals()
+# d.dogs()
+# d.animals()
+# c.cats()
+# c.animals()
+# p.persian_cats()
+# p.cats()
+# p.animals()
