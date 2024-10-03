@@ -2180,3 +2180,65 @@ import math
 # p.persian_cats()
 # p.cats()
 # p.animals()
+
+
+
+# polymorphism
+
+
+# class ed():
+#     def notes(self):
+#         print('notes in ed')
+
+# class school(ed):
+#     def notes(self,sub):
+#         print('notes in school',sub)
+
+# class std(school):
+#     def notes(self,sub):
+#         print('notes in std')
+#         super().notes(sub)
+
+# sha=std()
+# sha.notes('py')
+
+
+
+# class bank():
+#     def __init__(self):
+#         print('add bank dtls')
+    
+# class user():
+#     def __init__(self):
+#         print('add user dtls')
+#         super().__init__()
+
+# sbi=bank()
+# shahid=user()
+
+
+
+from abc import ABC,abstractmethod
+class syn(ABC):
+    @abstractmethod
+    def reg(self):
+        pass
+
+    def py(self):
+        print('py')
+
+class std(syn):
+    def reg(self):
+        name=input('name')
+    def notes(self):
+        print('notes')
+
+class staff(syn):
+    def regi(self):
+        print('staff reg')
+
+
+# shahid=std()
+# shahid.reg()
+
+
