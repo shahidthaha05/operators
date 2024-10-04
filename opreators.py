@@ -1998,7 +1998,11 @@ import math
 # obj=bank()
 # obj.deposit(5000)
 # obj.balance()
-# obj.withdrow(2000)
+# obj.withdrow(2000)shahid=std()
+# shahid.reg()
+# shahid=std()
+# shahid.reg()
+
 # obj.balance()
 # print(obj.bal)
 
@@ -2218,27 +2222,62 @@ import math
 
 
 
-from abc import ABC,abstractmethod
-class syn(ABC):
-    @abstractmethod
-    def reg(self):
-        pass
+# from abc import ABC,abstractmethod
+# class syn(ABC):
+#     @abstractmethod
+#     def reg(self):
+#         pass
 
-    def py(self):
-        print('py')
+#     def py(self):
+#         print('py')
 
-class std(syn):
-    def reg(self):
-        name=input('name')
-    def notes(self):
-        print('notes')
+# class std(syn):
+#     def reg(self):
+#         name=input('name')
+#     def notes(self):
+#         print('notes')
 
-class staff(syn):
-    def regi(self):
-        print('staff reg')
+# class staff(syn):
+#     def regi(self):
+#         print('staff reg')
 
 
 # shahid=std()
 # shahid.reg()
 
-
+import re
+# a='welcome to all '
+# print(re.sub('to','TO',a))
+# print(re.sub('too','TO',a))
+# print(re.split(' ',a))
+# print(re.findall('to',a))
+# print(re.findall('toO',a))
+# a='welcome to all to to to'
+# print(re.findall('to',a))
+# print(re.search('to',a))
+# a='aBcd'
+# print(re.search('a',a))
+# print(re.search('a.',a))
+# print(re.search('d.',a))
+# print(re.search('d.*',a))
+# print(re.search('a.*',a))
+# print(re.search('a.+',a))
+# print(re.search('d.+',a))
+# print(re.search('c.+',a))
+# print(re.search('c.?',a))
+# print(re.search('d.?',a))
+# print(re.search('a.?',a))
+# print(re.search('[a-z]',a))
+# print(re.search('[A-Z]',a))
+# a='AIFS123'
+# print(re.search('[M-Z]',a))
+# print(re.search('[A-Z][0-9]',a))
+# a='214343213'
+# print(re.search('[a-z0-9]',a))
+# a='ggvbfjg'
+# print(re.search('[a-z0-9]',a))
+a='abcd'
+# print(re.search('[a-z].',a))
+# print(re.search('[a-z]+',a))
+print(re.search('[a-z]?',a))
+print(re.search('[a-z]?.',a))
