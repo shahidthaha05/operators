@@ -2276,8 +2276,45 @@ import re
 # print(re.search('[a-z0-9]',a))
 # a='ggvbfjg'
 # print(re.search('[a-z0-9]',a))
-a='abcd'
+# a='abcd'
 # print(re.search('[a-z].',a))
 # print(re.search('[a-z]+',a))
-print(re.search('[a-z]?',a))
-print(re.search('[a-z]?.',a))
+# print(re.search('[a-z]?',a))
+# print(re.search('[a-z]?.',a))
+
+# a='abchd2'
+# print(re.search('[a-z].*[0-9]',a))
+# print(re.search('[a-z].{5}',a))
+
+
+# mob number validation
+
+# import re
+# a=(input("enter your number : "))
+# if len(a)==10 and re.search('[6-9].{9}',a) and a.isdigit():
+#     print('valid')
+# else:
+#     print('not ')
+
+
+
+# email validation
+
+# import re
+# a=input("enter your email  : ")
+# if re.search('^[a-z].*@gmail.com$',a):
+#     print('valid')
+# else:
+#     print('not ')
+
+
+# password validation 
+
+import re 
+
+a=input('enter your password : ')
+if re.search('^[A-z0-9].*[@#$&0-9]',a) and  not(a.isdigit()) and len(a)>=8:
+    print('valid')
+else:
+    print('not')
+
