@@ -2318,5 +2318,32 @@ import re
 # else:
 #     print('not')
 
-a=hello
-print(a)
+# a=hello
+# print(a)
+
+
+
+
+        #   DBMS 
+        # ------------
+
+
+import sqlite3
+
+con = sqlite3.connect('batch7.db')
+try:
+    con.execute("create table std(rool_no int,name text,age int)")
+except:
+    pass
+
+# con.execute("insert into std(rool_no,name,age)values(1,'shahid',20),(2,'fayas',90),(3,'yaseen',85),(4,'aslam',100),(5,'althaf',10)")
+# con.commit()
+
+
+roll=int(input("enter roolno : "))
+name=input("enter the name : ")
+age=int(input("enter the age : "))
+
+
+con.execute("insert into std(rool_no,name,age)values(?,?,?)",(roll,name,age))
+con.commit()
