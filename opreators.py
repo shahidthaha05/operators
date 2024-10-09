@@ -2310,11 +2310,13 @@ import re
 
 # password validation 
 
-import re 
+# import re 
 
-a=input('enter your password : ')
-if re.search('^[A-z0-9].*[@#$&0-9]',a) and  not(a.isdigit()) and len(a)>=8:
-    print('valid')
-else:
-    print('not')
+# a=input('enter your password : ')
+# if re.search('^[A-z0-9].*[@#$&0-9]',a) and  not(a.isdigit()) and len(a)>=8:
+#     print('valid')
+# else:
+#     print('not')
 
+a=hello
+print(a)
