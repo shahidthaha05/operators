@@ -2340,10 +2340,84 @@ except:
 # con.commit()
 
 
-roll=int(input("enter roolno : "))
-name=input("enter the name : ")
-age=int(input("enter the age : "))
+# roll=int(input("enter roolno : "))
+# name=input("enter the name : ")
+# age=int(input("enter the age : "))
 
 
-con.execute("insert into std(rool_no,name,age)values(?,?,?)",(roll,name,age))
-con.commit()
+# con.execute("insert into std(rool_no,name,age)values(?,?,?)",(roll,name,age))
+# con.commit()
+
+
+
+# limit in dbms
+
+# a=int(input("no of students : "))
+# for i in range(a):
+#     roll_no=i+1
+#     name=input("enter the name : ")
+#     age=int(input("enter the age : "))
+
+#     con.execute("insert into std(rool_no,name,age)values(?,?,?)",(roll_no,name,age))
+#     con.commit()
+
+
+
+# to show the full items in tables
+
+
+# data=con.execute("select * from std")
+# # print(data)
+# for i in data:
+#     print(i)
+
+
+
+
+# data=con.execute("select * from std where rool_no = 2 ")
+# # print(data)
+# for i in data:
+#     print(i)
+
+
+
+# a=int(input("enter the roll no : "))
+# data=con.execute("select * from std where rool_no = ? " ,(a,))
+# # print(data)
+# for i in data:
+#     print(i)
+
+
+
+# update 
+
+# a=input("enter ur name : ")
+# b=input("enter ur new name : ")
+# con.execute("update std set name= ? where name= ? ",(b,a) )
+# con.commit()
+
+
+# delete
+
+# a=int(input("enter roolno: "))
+# con.execute("delete from std where rool_no=?", (a,))
+# con.commit()
+
+
+
+# selecting a word of the alphabet
+
+# data=con.execute("select * from std where name like '%a%' ")
+# # print(data)
+# for i in data:
+#     print(i)
+
+
+# order of name by decenting order
+
+# data=con.execute("select * from std order by name desc ")
+# # print(data)
+# for i in data:
+#     print(i)
+
+
