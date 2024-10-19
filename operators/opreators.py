@@ -2427,22 +2427,66 @@ except:
 
 
 
-try:
-    con.execute("create table mark(roll_no int,name text,mark int)")
-except:
-    pass
+# try:
+#     con.execute("create table mark(roll_no int,name text,mark int)")
+# except:
+#     pass
 
 
-# con.execute("insert into mark(roll_no,name,mark)values(2,'py',80),(3,'php',85),(4,'java',70)")
-# con.commit()
+# # con.execute("insert into mark(roll_no,name,mark)values(2,'py',80),(3,'php',85),(4,'java',70)")
+# # con.commit()
 
-# data=con.execute("select std.rool_no,std.name,std.age,mark.name,mark.mark from std left join mark")
+# # data=con.execute("select std.rool_no,std.name,std.age,mark.name,mark.mark from std left join mark")
+# # for i in data:
+# #     print(i)
+
+
+
+# data=con.execute("select name,sum(age) from std group by name")
 # for i in data:
 #     print(i)
 
 
 
-data=con.execute("select name,sum(age) from std group by name")
-for i in data:
-    print(i)
+# x=4
+# for i in range(1,4):
+#     a=1
+#     for i in range(1,x):
+#         print(a,l="")
+#         a+=1
+#         x -=1
+# print("")
 
+
+# numbers
+
+# x = 4
+# for i in range(1, 4):
+#     a = 1
+#     for j in range(1, x):
+#         print(a, end=" ")
+#         a += 1
+#     x -= 1
+#     print(" ")  
+
+
+# alphabets
+
+# x = 4
+# for i in range(1, 4):
+#     a = 65
+#     for j in range(1, x):
+#         print(chr(a), end=" ")
+#         a += 1
+#     x -= 1
+#     print(" ")  
+
+
+x = 4
+for i in range(1, 4):
+    a = 1
+    for j in range(1, x):
+        print(a, end=" ")
+        a += 1
+    x -= 1
+    print(" ")  
